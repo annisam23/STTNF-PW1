@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>No. 4</title>
+    <style media="screen">
+      img{
+        width: 25%;
+        border: 1px solid black;
+      }
+      form{
+        border: 1px solid plum;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Gambar Hewan</h1>
+    <h6 style="text-align:center;">Project 2</h6>
+    <form id="frm1" action="index.html" method="post">
+      Pilih Hewan : <select id="hewan" onchange="pilih()">
+        <option value="kucing">kucing</option>
+        <option value="anjing">Anjing</option>
+        <option value="kelinci">Kelinci</option>
+        <option value="rusa">Rusa</option>
+        <option value="bison">Bison</option>
+        <option value="sapi">Sapi</option>
+        <option value="kurakura">Kura-kura</option>
+        <option value="singa">Singa</option>
+      </select>
+      <br>
+      <img src="gambar/kucing.jpg" alt="Ini kucing" id="kucing" onclick="diklik()">
+    </form>
+    <h6 style="text-align:right;">Annisa Maulida Rahma</h6>
+
+    <script type="text/javascript">
+      function pilih(){
+        let listHewan = document.getElementById("hewan");
+        let idx = listHewan.selectedIndex;
+        console.log("Hewan index ke-" + idx + "adalah:" + listHewan.value);
+        let gambar = document.getElementById("kucing");
+        gambar.src="gambar/"+listHewan[idx].value+".jpg";
+        window.alert("Ini adalah:" + listHewan.value);
+      }
+      function diklik() {
+        let listHewan = document.getElementById("hewan");
+        let idx = listHewan.selectedIndex;
+        console.log("Hewan index ke-" + idx + "adalah:" + listHewan.value);
+        let gambar = document.getElementById("kucing");
+        gambar.src="gambar/"+listHewan[idx].value+".jpg";
+        window.alert("Ini adalah:" + listHewan.value);
+
+      }
+    </script>
+  </body>
+</html>

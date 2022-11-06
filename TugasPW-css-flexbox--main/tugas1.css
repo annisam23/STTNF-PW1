@@ -1,0 +1,38 @@
+.container1{
+  display: flex;
+  background-color: pink;
+}
+.poto{
+  height: 30vh;
+  flex-grow: 1;
+  margin: 1em;
+}
+img{
+  max-height:100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+.container2{
+  display: flex;
+  background: mistyrose;
+  align-items: flex-end;
+
+}
+.poto2{
+  height: 42vh;
+  margin: 1em;
+  flex-grow: 1;
+}
+/* ul{ */
+  /* list-style-type: none; */
+  /* display:flex; */
+  /* flex-wrap: wrap; */
+/* } */
+/* li{ */
+  /* height: 42vh; */
+  /* flex-grow:1; */
+  /* margin: 1em; */
+/* } */
+/* li:last-child { */
+  /* flex-grow:10; */
+/* } */

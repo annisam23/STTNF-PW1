@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan 1</title>
+    <style media="screen">
+      form{
+        border: 2px solid plum;
+      }
+      h1{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Menghitung luas dan keliling</h1>
+    <form class="" action="index.html" method="post">
+       Nilai jari-jari : <input type="number" placeholder="Masukan angka" id="bil" size="10"><br>
+       <button type="button" name="button" onclick="mariHitung()">Hitung</button>
+       <br>hasil:<span id="hasil"></span>
+    </form>
+    <script type="text/javascript">
+      function mariHitung() {
+        let PHI = 3.14;
+        let jari = document.getElementById("bil").value;
+        console.log("Jari-jari yang dimasukan : " +  jari);
+        let luas = PHI * jari * jari;
+        let kll = 2.0 * PHI * jari;
+        console.log("luasnya adalah: " + luas);
+        console.log("kelilingnya adalah :" + kll);
+        let hasilNya = document.getElementById("hasil");
+        hasilNya.innerHTML = ("<br>" + "Luasnya: " + luas + "<br>" + "kelilingnya: " + kll);
+      }
+    </script>
+  </body>
+</html>

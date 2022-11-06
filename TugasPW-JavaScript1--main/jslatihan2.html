@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan 2 (Menghitung Kurs Rupiah)</title>
+  </head>
+  <body>
+    <h3>Menghitung Kurs Rupiah</h3>
+
+    <fieldset>
+       <form>
+         <pre>
+           <div class="">
+            Masukan Nilai $ = <input type="number" id="uangz" value=""></div>
+         </pre>
+         <center>
+
+           <button type="button" onclick="hitung()">Klik untuk Menghitung</button>
+           <button type="reset" value="hapusz">Hapuzz</button></center>
+           <span id="hasil"></span>
+
+       </form>
+    </fieldset>
+    <script type="text/javascript">
+
+      function hitung(){
+        const rupiah = 14.650;
+        let uangz = document.getElementById("uangz").value;
+        console.log ("cetak uang : " + uangz);
+        let mariHitung = rupiah * uangz;
+        let hasilNya = document.getElementById("hasil");
+        hasil.innerHTML = ("Hasilnya adalah :" + mariHitung + "Rupiah");
+        console.log ("Hasil perhitungan adalah : " + mariHitung);
+      }
+    </script>
+
+  </body>
+</html>

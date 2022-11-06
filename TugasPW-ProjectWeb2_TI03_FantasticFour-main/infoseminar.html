@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Tittle Icons -->
+    <link rel="icon" href="logo1.png" type="png" sizes="25x25" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- CSS KU -->
+    <link rel="stylesheet" href="reu.css" />
+    <title>SISTA | Info Seminar</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body style="margin: auto;"> 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light  shadow fixed-top-background-color: linear-gradient(to right, #ffa500, #ff4500);">
+        <div class="container">
+          <a class="navbar-brand" href="#home">
+            <img src="logo1.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top" />
+            SISTA | STT-NF
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="landingpage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="landingpage.html#jadwal">Jadwal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="daftar_sidang_peserta.html">Daftar Seminar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nurulfikri.ac.id/">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="landingpage.html#boutus">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <!-- Login -->
+          <section id="registrasi">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col">
+                        <h2><u>Sistem Informasi Seminar Tugas Akhir - SISTA</u></h2>
+                    </div>
+                </div> 
+
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <!-- /.col -->
+              <div class="col-sm-12">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="landingpage.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="landingpage.html#jadwal">Jadwal</a></li>
+                  <li class="breadcrumb-item active">Detail Jadwal</li>
+                </ol>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <fieldset style="border: solid 2px; border-radius: 1em; background-color: #e9ecef; padding-top:5px; width:80%; margin-left: 10%; margin-bottom: 2px; text-align: justify;">
+          <div class="content">
+            <br />
+            <legend><p class="text-md ml-3" style="text-align: center;">Seminar Proposal</p></legend>
+            <div class="container-fluid">
+              <div class="row justify-content-center m-5">
+                <div class="col-sm-12">
+                  <form>
+                    <div class="form-group row">
+                      <label for="text1" class="col-4 col-form-label">NIM :</label>
+                      <div class="col-8"><input id="text1" name="text1" type="text" class="form-control" style="border: none" value="0102002" /></div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text2" class="col-4 col-form-label">Nama :</label>
+                      <div class="col-8">
+                        <input id="text2" name="text2" type="text" class="form-control" style="border: none" value="Diego Armando" />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text3" class="col-4 col-form-label">Prodi :</label>
+                      <div class="col-8">
+                        <input id="text3" name="text3" type="text" class="form-control" required="required" style="border: none" value="Teknik Informatika" />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text4" class="col-4 col-form-label">Judul</label>
+                      <div class="col-8">
+                        <input id="text4" name="text4" type="text" class="form-control" required="required" style="border: none" value="Rancang Bangun Aplikasi Seminar Tugas Akhir Berbasis Web Menggunakan MVC Framework" />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text5" class="col-4 col-form-label">Waktu :</label>
+                      <div class="col-8">
+                        <input id="text5" name="text5" type="text" class="form-control" required="required" style="border: none" value="Senin, 4 Januari 2021, 10:00" />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text" class="col-4 col-form-label">Ruang :</label>
+                      <div class="col-8">
+                        <input id="text" name="text" type="text" class="form-control" style="border: none" value="Zoom Online" />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text6" class="col-4 col-form-label">Pembimbing :</label>
+                      <div class="col-8">
+                        <input id="text6" name="text6" type="text" class="form-control" style="border: none" value="Sirojul Munir, S.Si, M.Kom" />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="text7" class="col-4 col-form-label">Penguji :</label>
+                      <div class="col-8">
+                        <input id="text7" name="text7" type="text" class="form-control" style="border: none" value="Ahmad Rioo M.Si" />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="offset-4 col-8">
+                        <a href="daftar_peserta_seminar.html">
+                        <button name="submit" type="button" class="btn btn-primary" style="margin-top: 1rem;">Daftar Peserta</button></a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+          </div>
+        </fieldset>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+
+      <!-- Footer -->
+      <footer class="background-color: linear-gradient(to right, #ffa500, #ff4500); text-center pb-4">
+        <p class="text-center "><i class="bi bi-check2-square"></i> 2022 SISTA STT NF <br> Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="landingpage.html#boutus">Fantastic Four</a> </p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

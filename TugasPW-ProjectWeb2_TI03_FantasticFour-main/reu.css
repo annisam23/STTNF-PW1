@@ -1,0 +1,9 @@
+html, body {
+  background-image: linear-gradient(to right, #ffa500, #ff4500);
+}
+section {
+  padding-top: 5rem;
+}
+#registrasi {
+  background-color: #9cd0fc;
+}

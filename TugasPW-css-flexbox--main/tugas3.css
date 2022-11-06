@@ -1,0 +1,32 @@
+body{
+  background-color: peachpuff;
+}
+header,footer{
+  width: 1250px;
+  height: 100px;
+  background-color: cyan;
+  margin: 1em;
+}
+.main{
+  display:flex;
+}
+.main aside{
+  background-color: darkcyan;
+  width: 300px;
+  height: 300px;
+  margin: 1em;
+}
+.artikels{
+  background-color: salmon;
+  display: flex;
+  align-items: flex-end;
+  width: 1000px;
+  height: 300px;
+  margin:1em;
+}
+.artikels .img1 {
+  background-color: grey;
+  height: 150px;
+  width: 150px;
+  margin:1em;
+}

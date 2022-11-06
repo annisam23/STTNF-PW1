@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No.2</title>
+    <style media="screen">
+      fieldset{
+        background-color: plum;
+      }
+      h1,h6{
+          text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <h1>Konversi IDR ke Rupiah</h1>
+  <h6>Project 2</h6>
+    <fieldset>
+        <div class="container">
+            <form id="form1">
+                <center>
+                    <div>
+                        <input type="text" id="rupiah" placeholder="Kurs">
+                        <a href="#"><select name="" id="kurs">
+                            <option value="usd">USD</option>
+                            <option value="singa">Dollar singapore</option>
+                            <option value="eur">Euro</option>
+                            <option value="ringgit">Ringgit</option>
+                            <option value="riyal">Riyal</option>
+                            <option value="yen">Yen Japan</option>
+                        </select></a>
+                        <a href="#"><button id="konversiButton" onclick="konversi()">Konversi</button></a>
+                        <input type="text" placeholder="Rupiah" id="asing">
+                    </div>
+                    <div>
+                        <button type="reset" id="hapus" onclick="hapus()"><img src=" reset.svg" alt="reset"></button>
+                    </div>
+                </center>    
+            </form>
+        </div>
+    </fieldset>
+    <h6 style="text-align:right;">Annisa Maulida Rahma</h6>
+
+    <script>
+        function konversi(){
+            let rupiahNya = document.getElementById("rupiah").value;
+            let kursNya = document.getElementById("kurs").value;
+
+            console.log(rupiahNya);
+            console.log(kursNya);
+
+            let usd = rupiahNya * 14650;
+            let singa = rupiahNya * 13472;
+            let eur = rupiahNya * 16287;
+            let ringgit = rupiahNya * 3411;
+            let riyal = rupiahNya * 3847;
+            let yen = rupiahNya * 120;
+            let salah = 0;
+
+            if (kursNya == "usd"){
+                document.getElementById("asing").value=usd + "Rupiah";
+                document.addEventListener("submit",(event) => {
+                    event.preventDefault();
+                });
+                console.log(usd);
+            }else if (kursNya == "singa"){
+                document.getElementById("asing").value=singa + "Rupiah";
+                document.addEventListener("submit",(event) => {
+                    event.preventDefault();
+                });
+                console.log(singa);
+            }else if(kursNya == "eur"){
+                document.getElementById("asing").value=eur + "Rupiah";
+                document.addEventListener("submit",(event) => {
+                    event.preventDefault();
+                });
+                console.log(eur);
+            }else if(kursNya == "ringgit"){
+                document.getElementById("asing").value=ringgit + "Rupiah";
+                document.addEventListener("submit",(event) => {
+                    event.preventDefault();
+                });
+                console.log(ringgit);
+            }else if (kursNya == "riyal"){
+                document.getElementById("asing").value=riyal + "Rupiah";
+                document.addEventListener("submit",(event) => {
+                    event.preventDefault();
+                });
+                console.log(riyal);
+            }else if (kursNya == "yen"){
+                document.getElementById("asing").value=yen + "Rupiah";
+                document.addEventListener("submit",(event) => {
+                    event.preventDefault();
+                });
+                console.log(yen);
+            }else{
+                value = salah;
+                console.log("salah");
+            }
+        }
+        function hapus(){
+            document.getElementById("form1").reset();
+        }
+    </script>
+</body>
+</html>

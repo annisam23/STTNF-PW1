@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/login_sista.css">
+    <link rel="shortcut icon" href="assets/images/logo1.png" type="image/png" />
+
+    <script>
+      function sukses() {
+        location.replace("signup_sukses.html")
+}
+
+    </script>
+    <title>SISTA | Masuk dan Daftar</title>
+  </head>
+
+  <body>
+    <!-- Bagian Conatainer -->
+    <div class="container" id="container">
+      <div class="row">
+
+        <!-- Bagian Sign Up -->
+        <div class="col align-center flex-col sign-up">
+          <div class="form-wrapper align-center">
+            <form action="#" class="form sign-up" name="myForm">
+              <h1 class="sign-up-tittle">Registrasi</h1>
+              <div class="input-group capitalize">
+                <i class='bx bxs-user-plus'></i>
+                <input name="Lengkap" type="text" id="lengkap__sign-up" minlength="3" placeholder="Nama Lengkap (AIS)">
+              </div>
+              <div class="input-group capitalize">
+                <i class='bx bxs-graduation'></i>
+                <input name="Prodi" type="text" id="prodi__sign-up" placeholder="Program Studi">
+              </div>
+              <div class="input-group">
+                <i class='bx bxs-user'></i>
+                <input name="Name" type="text" id="username__sign-up" minlength="3" placeholder="Username">
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input name="Password" type="password" id="password__sign-up" minlength="8" placeholder="Password">
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input name="Confirm" type="password" id="confirm-password__sign-up" minlength="8" placeholder="Konfirmasi Password">
+              </div>
+              <button type="submit" onclick="daftar__baru()">Daftar</button>
+              <p>
+                <span>Sudah mempunyai akun?</span>
+                <b id="sign-in"><span class="sign-in-here">Masuk</span></b>
+              </p>
+              <h6>atau</h6>
+              <div class="social-list align-center sign-up">
+                <div class="align-center google-bg">
+                  <i class="bx bxl-google"></i>
+                </div>
+                <div class="align-center insta-bg">
+                  <i class="bx bxl-instagram-alt"></i>
+                </div>
+                <div class="align-center linked-bg">
+                  <i class="fa fa-linkedin-square"></i>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Akhir Sign Up -->
+
+        <!-- Bagian Sign In -->
+        <div class="col align-center flex-col sign-in">
+          <div class="form-wrapper align-center">
+            <div class="form sign-in">
+              <h1 class="sign-in-tittle">Masuk</h1>
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input type="text" id="userlogin" placeholder="Username" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" id="passlogin" placeholder="Password" />
+              </div>
+              <button onclick="sukses()">Masuk</button>
+              <p>
+                <b>Lupa password?</b>
+              </p>
+              <p>
+                <span>Belum mempunyai akun?</span>
+                <b id="sign-up"><span class="sign-up-here">Daftar disini</span></b>
+              </p>
+              <h6>atau</h6>
+              <div class="social-list align-center sign-in">
+                <div class="align-center google-bg">
+                  <i class="bx bxl-google"></i>
+                </div>
+                <div class="align-center insta-bg">
+                  <i class="bx bxl-instagram-alt"></i>
+                </div>
+                <div class="align-center linked-bg">
+                  <i class="fa fa-linkedin-square"></i>
+                <div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Akhir Sign In -->
+      </div>
+      <!-- Akhir Row -->
+
+      <!-- Bagian Konten -->
+      <div class="row content-row">
+        <!-- Buat Sign-in -->
+        <div class="col align-items flex-col">
+          <div class="text sign-in">
+            <h2>Hallo!
+            <br>
+            <span class="welcome">Welcome Back</span></h2>
+            <p>
+              Hallo Civitas Nufir!
+              <br>Selamat datang kembali di sista. Agar kamu tetap terhubung bersama kami silahkan masuk dengan akun pribadi yang anda miliki. Sista tahu bahwa tugas akhir berat seperti halnya istiqamah. Namun,  percayalah usaha dan do'a akan mempermudah itu semua.
+            </p>
+            <div class="btn-sign-in">
+              <a id="back__to__home" href="landingpage.html" class="button1">Home</a>
+              <a id="to__daftar" href="#" class="button2">Daftar</a>
+            </div>
+          </div>
+          <div class="img sign-in">
+            <img src="assets/images/hosting.png" alt="#" />
+          </div>
+          <div class="img sign-in-dua">
+            <img src="assets/images/laptop-g03b1b2551_1280.png" alt="#">
+          </div>
+          <div class="img sign-in-tiga">
+            <img src="assets/images/2-books-png-image.png" alt="#">
+          </div>
+        </div>
+
+        <!-- Buat Sign Up -->
+        <div class="col coll align-items flex-col">
+          <div class="text sign-up">
+            <h2>Welcome to SISTA
+            <br><span class="sista">"Sistem Informasi Tugas Akhir"</span>
+          </h2>
+            <p>
+              Hallo Civitas Nufir!
+              <br>Kamu baru dan belum memiliki akun sista? Silahkan daftar sekarang juga agar kamu tidak ketinggalan berbagai informasi terkait tugas akhir yang menakutkan itu!. Tolong perhatikan setiap data yang kamu input, pastikan semuanya benar sebelum dikirimkan. 
+            </p>
+          </div>
+          <div class="img sign-up">
+            <img src="assets/images/n1.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Container -->
+    </div>
+    
+    <script src="assets/js/login_sista.js"></script>
+  </body>
+</html>

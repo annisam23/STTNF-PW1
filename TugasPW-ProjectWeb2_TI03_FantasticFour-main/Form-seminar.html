@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SISTA | Form Seminar </title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="shortcut icon" href="logo1.png" type="image/png" />
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+  <script>
+    function alertsukses() {
+      alert("Pendaftaran Berhasil !");
+    
+    location.replace("data_peserta_seminar.html")
+    }
+    </script>
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-orange navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="landingpage.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="landingpage.html#boutus" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+    <a href="#" style="color:bisque">Admin </a> <a href="#" style="color:bisque">  |  Logout </a>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style=" background-color: rgb(83, 119, 153);">
+    <!-- Brand Logo -->
+    <a href="landingpage.html" class="brand-link">
+      <img src="dist/img/logo1.png" width="25" height="25" class="d-inline-block align-top" alt="logo sista">
+      <span  style="align-self: center; color: white ; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ">SISTA - STT NF </span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="https://i.pinimg.com/236x/b4/b4/4d/b4b44d3367a51b5f4cc9d35a6307b594.jpg" class="img-circle elevation-2" alt="User Image" style="border: black 10px;">
+        </div>
+        <div class="info">
+          <a href="landingpage.html" class="d-block" style="color: wheat;">Fantastic Four</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="kelolaseminar.html" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard Seminar TA
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mahasiswa/i</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p style="color: black;">Dosen</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="login_sista.html" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p style="color: black;">Logout</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Form Seminar / Sidang Mahasiswa </h1>
+            <button type="button" class="btn btn-primary" style="margin-top:25px;">Tambah Seminar baru</button>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#" style="color:black">Seminar</a></li>
+              <li class="breadcrumb-item active">Kelola Seminar</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <fieldset style="background-color: #e9ecef; margin: 30px; border: black 2px solid; border-radius: 1em;">
+        <div class="content">
+          <br />
+          <legend><p class="text-md ml-3">Form Pendaftaran Seminar TA</p></legend>
+          <div class="container-fluid">
+            <div class="row justify-content-center mt-5">
+              <div class="col-sm-5">
+                <form>
+                  <div class="form-group row">
+                    <label for="text" class="col-4 col-form-label">NIM</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-address-book-o"></i>
+                          </div>
+                        </div>
+                        <input id="text" name="text" placeholder="masukkan NIM" type="text" class="form-control" required="required" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="text1" class="col-4 col-form-label">Nama</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-address-card-o"></i>
+                          </div>
+                        </div>
+                        <input id="text1" name="text1" placeholder="masukkan nama" type="text" class="form-control" required="required" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-4 col-form-label" for="select">Prodi</label>
+                    <div class="col-8">
+                      <select id="select" name="select" class="custom-select" required="required">
+                        <option value="">Pilih Prodi</option>
+                        <option value="ti">Teknik Informatika</option>
+                        <option value="si">Sistem Informasi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="text2" class="col-4 col-form-label">Tanggal Seminar</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <input id="text2" name="text2" placeholder="dd/mm/yyyy" type="text" class="form-control" required="required" />
+                        <div class="input-group-append">
+                          <div class="input-group-text">
+                            <i class="fa fa-calendar"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="text3" class="col-4 col-form-label">Jam Seminar</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend"></div>
+                        <input id="text3" name="text3" placeholder="hh : mm" type="time" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="text4" class="col-4 col-form-label">Ruangan</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-home"></i>
+                          </div>
+                        </div>
+                        <input id="text4" name="text4" placeholder="masukkan ruangan" type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="offset-4 col-8">
+                      <button onclick="alertsukses()" name="submit" type="submit" class="btn btn-primary">Daftar</button>
+                      <button name="reset" type="reset" class="btn btn-danger">Hapus</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-sm-1"></div>
+
+              <div class="col-sm-5">
+                <form>
+                  <div class="form-group row">
+                    <label for="textarea" class="col-4 col-form-label">Judul TA</label>
+                    <div class="col-8">
+                      <textarea id="textarea" name="textarea" cols="40" rows="2" class="form-control" required="required" placeholder="tulis judul TA"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="select" class="col-4 col-form-label">Seminar</label>
+                    <div class="col-8">
+                      <select id="select" name="select" class="custom-select" required="required">
+                        <option value="proposal">proposal</option>
+                        <option value="seminar">sosial</option>
+                        <option value="tutorial">tutorial</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="select1" class="col-4 col-form-label">Pembimbing</label>
+                    <div class="col-8">
+                      <select id="select1" name="select1" class="custom-select" required="required">
+                        <option value="pakmunir">Sirojul Munir, S.Si, M.Kom</option>
+                        <option value="bumisna">Misna Asqia, S.Kom, M.Kom.</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="select2" class="col-4 col-form-label">Penguji 1</label>
+                    <div class="col-8">
+                      <select id="select2" name="select2" class="custom-select" required="required">
+                        <option value="pakrio">Ahmad Rio Adriansyah, S.Si, M.Si</option>
+                        <option value="pakadi">Adi Wahyu Adji, S.Si, M.SM.</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="select3" class="col-4 col-form-label">Penguji 2</label>
+                    <div class="col-8">
+                      <select id="select3" name="select3" class="custom-select">
+                        <option value="burahmah">Amalia Rahmah, M.T</option>
+                        <option value="pakrusman">Drs Rusmanto, M.M</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+      </fieldset>
+
+
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar" style=" background-color: orange;">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Menu</h5>
+      <p><a href="kelolaseminar.html " style="color: bisque;">Kelola Seminar</a></p>
+      <p><a href="Form-seminar.html" style="color: bisque;">Form Seminar</a></p>
+      <p><a href="data_peserta_seminar.html" style="color: bisque;">Data Peserta Seminar</a></p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer " style="margin-top: 13%;" >
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      SISTA - STTNF
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2022 <a href="landingpage.html#boutus">Fantastic Four</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>

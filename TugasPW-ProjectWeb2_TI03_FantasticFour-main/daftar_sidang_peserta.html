@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/daftar_peserta_seminar.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="shortcut icon" href="assets/images/logo1.png" type="image/png" />
+    <script>
+      function alertsukses() {
+        alert("Pendaftaran Berhasil !");
+      }
+      </script>
+      
+
+    <title>SISTA | Daftar Sidang Peserta</title>
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="container">
+        <div class="container-1">
+          <h1 class="tittle">Sistem Informasi Seminar Tugas Akhir - SISTA</h1>
+          <div class="utk-nav">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="landingpage.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="landingpage.html#jadwal"><i class="far fa-calendar-alt"></i> Jadwal</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-list-ul"></i> Daftar Sidang Peserta</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <fieldset style="background-color: #e9ecef; margin: 30px; border: black 2px solid; border-radius: 1em;">
+        <div class="content">
+          <br />
+          <legend><p class="text-md ml-3" style="text-align:center; padding: 2%;">Form Pendaftaran Seminar TA</p></legend>
+          <div class="container-fluid">
+            <div class="row justify-content-center mt-5">
+              <div class="col-sm-5">
+                <form>
+                  <div class="form-group row">
+                    <label for="text" class="col-4 col-form-label">NIM</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-address-book-o"></i>
+                          </div>
+                        </div>
+                        <input id="text" name="text" placeholder="masukkan NIM" type="text" class="form-control" required="required" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="text1" class="col-4 col-form-label">Nama</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-address-card-o"></i>
+                          </div>
+                        </div>
+                        <input id="text1" name="text1" placeholder="masukkan nama" type="text" class="form-control" required="required" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-4 col-form-label" for="select">Prodi</label>
+                    <div class="col-8">
+                      <select id="select" name="select" class="custom-select" required="required">
+                        <option value="">Pilih Prodi</option>
+                        <option value="ti">Teknik Informatika</option>
+                        <option value="si">Sistem Informasi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="text2" class="col-4 col-form-label">Tanggal Seminar</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <input id="text2" name="text2" placeholder="dd/mm/yyyy" type="text" class="form-control" required="required" />
+                        <div class="input-group-append">
+                          <div class="input-group-text">
+                            <i class="fa fa-calendar"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="text3" class="col-4 col-form-label">Jam Seminar</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend"></div>
+                        <input id="text3" name="text3" placeholder="hh : mm" type="time" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="text4" class="col-4 col-form-label">Ruangan</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-home"></i>
+                          </div>
+                        </div>
+                        <input id="text4" name="text4" placeholder="masukkan ruangan" type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="offset-4 col-8">
+                      <button name="submit" type="submit" class="btn btn-primary" onclick="alertsukses()">Daftar</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-sm-1"></div>
+
+              <div class="col-sm-5">
+                <form>
+                  <div class="form-group row">
+                    <label for="textarea" class="col-4 col-form-label">Judul TA</label>
+                    <div class="col-8">
+                      <textarea id="textarea" name="textarea" cols="40" rows="2" class="form-control" required="required" placeholder="Tulis judul TA"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="select" class="col-4 col-form-label">Seminar</label>
+                    <div class="col-8">
+                      <select id="select" name="select" class="custom-select" required="required">
+                        <option value="proposal">Proposal</option>
+                        <option value="seminar">Sosial</option>
+                        <option value="tutorial">Tutorial</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="select1" class="col-4 col-form-label">Pembimbing</label>
+                    <div class="col-8">
+                      <select id="select1" name="select1" class="custom-select" required="required">
+                        <option value="pakmunir">Sirojul Munir, S.Si, M.Kom</option>
+                        <option value="bumisna">Misna Asqia, S.Kom, M.Kom.</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="select2" class="col-4 col-form-label">Penguji 1</label>
+                    <div class="col-8">
+                      <select id="select2" name="select2" class="custom-select" required="required">
+                        <option value="pakrio">Ahmad Rio Adriansyah, S.Si, M.Si</option>
+                        <option value="pakadi">Adi Wahyu Adji, S.Si, M.SM.</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="select3" class="col-4 col-form-label">Penguji 2</label>
+                    <div class="col-8">
+                      <select id="select3" name="select3" class="custom-select">
+                        <option value="burahmah">Amalia Rahmah, M.T</option>
+                        <option value="pakrusman">Drs. Rusmanto, M.M</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+      </fieldset>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

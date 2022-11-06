@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan 3 (Biaya Parkir)</title>
+  </head>
+  <body>
+    <h3>Hitung Biaya Parkir</h3>
+    <fieldset>
+      <form class="" action="index.html" method="post">
+        Masukan Jam masuk parkir <input type="number" size="10" value="" id="masuk"><br>
+        Masukan Jam keluar parkir <input type="number" size="10" value="" id="keluar"><br>
+        <center><button type="button" onclick="hitung()">Biaya Parkir</button><span id="harga"></span></center>
+      </form>
+    </fieldset>
+
+
+     <script type="text/javascript">
+
+
+       function hitung() {
+         let jam_masuk = document.getElementById("masuk").value;
+         let jam_keluar = document.getElementById("keluar").value;
+         let selisih = jam_keluar - jam_masuk;
+         let biaya =0;
+         const tarifAwal = 3000;
+         const tarifPerjam = 1000;
+         if(selisih <= 2){
+             biaya = tarifAwal;
+         }else{
+              let tambahan = selisih - 2;
+              biaya = tarifAwal + (tarifPerjam * tambahan);
+         }
+         let area = document.getElementById("harga");
+         harga.innerHTML = "<br>"+ "Harga Parkir nya adalah : " + biaya;
+       }
+
+
+     </script>
+  </body>
+</html>
